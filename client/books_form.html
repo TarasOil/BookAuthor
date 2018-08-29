@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row col-md-6 col-md-offset-3">
+            <form id="addBookForm">
+                <div class="form-group">
+                    <label for="">Title</label>
+                    <input type="text" class="form-control" id="title">
+                </div>
+                <div class="form-group">
+                    <label for="">Last Name</label>
+                    <input type="text" class="form-control" id="description">
+                </div>
+                <div class="form-group">
+                    <label for="">Image</label>
+                    <input type="text" class="form-control" id="image">
+                </div>
+                <div class="form-group">
+                    <label for="">Price</label>
+                    <input type="date" class="form-control" id="price">
+                </div>
+                <div class="form-group">
+                    <label for="">Publication</label>
+                    <input type="date" class="form-control" id="publication">
+                </div>
+                <div class="form-group">
+                    <label for="">Authors</label>
+                    <select name="authors[]" multiple="multiple" id="authors"></select>
+                </div>
+                <button type="submit" class="btn btn-success">Add Book</button>
+            </form>
+        </div>
+
+        <div class="row">
+            <table class="table table-striped" id="booksTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                        <th>Publication</th>
+                        <th>Author</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="public/js/jquery.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/books_adm.js"></script>
+	</body>
+</html>
